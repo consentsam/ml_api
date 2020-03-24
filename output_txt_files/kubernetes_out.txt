@@ -1,0 +1,18 @@
+(.devops) ec2-user:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+Error from server (AlreadyExists): deployments.apps "housing-prices" already exists
+NAME                              READY   STATUS    RESTARTS   AGE
+housing-prices-5cd577497b-57jq2   1/1     Running   0          36m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+In the separate terminal (prediction part) the following was printed 
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
